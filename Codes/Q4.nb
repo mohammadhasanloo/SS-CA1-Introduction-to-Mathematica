@@ -1,0 +1,199 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6698,        191]
+NotebookOptionsPosition[      5616,        163]
+NotebookOutlinePosition[      5957,        178]
+CellTagsIndexPosition[      5914,        175]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Introduction to Mathematica", "Title",
+ CellChangeTimes->{{3.8559116436412272`*^9, 3.855911680564513*^9}, {
+  3.8559117342899466`*^9, 
+  3.8559117376009917`*^9}},ExpressionUUID->"881b1a9b-92e0-4d3c-bcea-\
+af311c9f86c2"],
+
+Cell["\<\
+#CA1
+#Q4
+Signals & Systems
+Mohammad GharehHasanloo\
+\>", "Subtitle",
+ CellChangeTimes->{{3.855911748612548*^9, 3.855911760977973*^9}, {
+   3.85591180027975*^9, 3.8559118115199585`*^9}, {3.8559118544908056`*^9, 
+   3.855911862104415*^9}, {3.8559180389183054`*^9, 3.8559180451131053`*^9}, 
+   3.8561525529075603`*^9, 
+   3.856160514733671*^9},ExpressionUUID->"6d1d0e8b-f087-4baf-b0ef-\
+f960f8351a99"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"X1", "[", "t_", "]"}], "=", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", 
+    RowBox[{"-", "Infinity"}], "Infinity"], 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Exp", "[", 
+       RowBox[{"3", "*", "t"}], "]"}], "*", 
+      RowBox[{
+       RowBox[{"DiracDelta", "''"}], "[", 
+       RowBox[{"t", "-", "2"}], "]"}]}], ")"}], 
+    RowBox[{"\[DifferentialD]", "t"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.8561605430402308`*^9, 3.856160591457309*^9}, {
+   3.8561606744269123`*^9, 3.8561607535061407`*^9}, {3.856160803565934*^9, 
+   3.8561609036482334`*^9}, {3.856161000420597*^9, 3.8561610194654665`*^9}, {
+   3.856161060068606*^9, 3.8561610623745203`*^9}, {3.8561611892961936`*^9, 
+   3.8561612714246707`*^9}, {3.8561614205137835`*^9, 3.8561614231738796`*^9}, 
+   3.856161976352083*^9},
+ CellLabel->"In[31]:=",ExpressionUUID->"d40468d6-c616-4e5d-a54a-07f846c8422c"],
+
+Cell[BoxData[
+ RowBox[{"9", " ", 
+  SuperscriptBox["\[ExponentialE]", "6"]}]], "Output",
+ CellChangeTimes->{
+  3.8561607202216406`*^9, {3.856160818589385*^9, 3.8561608419443007`*^9}, {
+   3.856160874256511*^9, 3.856160905180213*^9}, 3.8561609768143835`*^9, 
+   3.8561611014692783`*^9, {3.856161194399891*^9, 3.856161272624426*^9}, 
+   3.856161424460469*^9, 3.8561619783840084`*^9, 3.8561694653630915`*^9},
+ CellLabel->"Out[31]=",ExpressionUUID->"ffcb051f-3f39-47c9-bf78-74852284515a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"X2", "[", "t_", "]"}], "=", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "5", "10"], 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Cos", "[", 
+       RowBox[{"2", "*", "Pi", "*", "t"}], "]"}], "*", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"DiracDelta", "[", 
+         RowBox[{"t", "-", "2"}], "]"}], "+", 
+        RowBox[{"DiracDelta", "[", 
+         RowBox[{"t", "-", "7"}], "]"}]}], ")"}]}], ")"}], 
+    RowBox[{"\[DifferentialD]", "t"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.8561612648009863`*^9, 3.8561613451087184`*^9}, {
+   3.8561613775044193`*^9, 3.8561613776549315`*^9}, {3.8561614105357924`*^9, 
+   3.856161413791236*^9}, 3.8561619749638433`*^9},
+ CellLabel->"In[32]:=",ExpressionUUID->"47495d8b-8e9d-4f18-b261-3528e6182bf2"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.85616135131764*^9, 3.8561613820443597`*^9}, 
+   3.8561614166991053`*^9, 3.856161980848215*^9, 3.8561694670324073`*^9},
+ CellLabel->"Out[32]=",ExpressionUUID->"1b8c80b8-dbb6-4829-825b-1b235201d89b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"X3", "[", "t_", "]"}], "=", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", 
+    RowBox[{"-", "Infinity"}], "Infinity"], 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Exp", "[", 
+          RowBox[{
+           RowBox[{"-", "3"}], "*", "t"}], "]"}], "*", 
+         RowBox[{"Cos", "[", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"Pi", "*", "t"}], ")"}], "/", "2"}], "]"}]}], "+", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"Ramp", "[", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"0.5", "*", "t"}], "-", "1"}], ")"}], "+", "1"}], "]"}],
+           "-", 
+          RowBox[{"2", 
+           RowBox[{"Ramp", "[", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"0.5", "*", "t"}], "-", "1"}], ")"}], "]"}]}], "+", 
+          RowBox[{"Ramp", "[", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"0.5", "*", "t"}], "-", "1"}], ")"}], "-", "1"}], 
+           "]"}]}], ")"}]}], ")"}], "*", 
+      RowBox[{
+       RowBox[{"DiracDelta", "'"}], "[", 
+       RowBox[{"t", "-", "0.5"}], "]"}]}], ")"}], 
+    RowBox[{"\[DifferentialD]", "t"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.8561614326126676`*^9, 3.8561614533618536`*^9}, {
+   3.8561614851781006`*^9, 3.8561615313414946`*^9}, {3.856161676950077*^9, 
+   3.856161776369282*^9}, 3.8561618145881214`*^9},
+ CellLabel->"In[33]:=",ExpressionUUID->"a5f853c8-f760-4117-954d-9f4359773aa3"],
+
+Cell[BoxData["0.22116584336258593`"], "Output",
+ CellChangeTimes->{3.8561617832859178`*^9, 3.8561618155513177`*^9, 
+  3.856161982690347*^9, 3.856169470518708*^9},
+ CellLabel->"Out[33]=",ExpressionUUID->"ceddd592-0723-452b-a566-2a16de305e65"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{759, 697},
+WindowMargins->{{8, Automatic}, {24, Automatic}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 225, 4, 96, "Title",ExpressionUUID->"881b1a9b-92e0-4d3c-bcea-af311c9f86c2"],
+Cell[808, 28, 408, 11, 149, "Subtitle",ExpressionUUID->"6d1d0e8b-f087-4baf-b0ef-f960f8351a99"],
+Cell[CellGroupData[{
+Cell[1241, 43, 917, 21, 49, "Input",ExpressionUUID->"d40468d6-c616-4e5d-a54a-07f846c8422c"],
+Cell[2161, 66, 484, 8, 32, "Output",ExpressionUUID->"ffcb051f-3f39-47c9-bf78-74852284515a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2682, 79, 799, 20, 46, "Input",ExpressionUUID->"47495d8b-8e9d-4f18-b261-3528e6182bf2"],
+Cell[3484, 101, 248, 3, 32, "Output",ExpressionUUID->"1b8c80b8-dbb6-4829-825b-1b235201d89b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3769, 109, 1575, 45, 111, "Input",ExpressionUUID->"a5f853c8-f760-4117-954d-9f4359773aa3"],
+Cell[5347, 156, 241, 3, 32, "Output",ExpressionUUID->"ceddd592-0723-452b-a566-2a16de305e65"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
